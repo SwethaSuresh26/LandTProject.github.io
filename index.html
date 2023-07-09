@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button.button1").click(function(){
+    $("div.ani").animate({
+      height: 'toggle'
+    });
+  });
+});
+</script> 
+
+ 
+</head>
+<style type="text/css">
+    body {
+  background-image: url("home.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+      background-color: #FCE9F1;
+      height: 41px;
+      width: 100%;
+      border:2px solid white;
+    }
+.call{
+    margin-right: 2px;
+    margin-top: -3px;
+}  
+.mail{
+    margin-right: 1200px;
+    margin-top: -3px;
+} 
+#calle{ 
+ position: absolute;
+  transform: translate(-50%,-50%);
+  left: 7%;
+  top: 60%;
+  font-size: 14px;
+
+}
+#maile{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 25%;
+    top: 60%;
+    font-size: 15px;
+
+}
+.face{
+    position: absolute;
+    top: 12%;
+    left: 80%;
+}
+.ig{
+    position: absolute;
+    top: 12%;
+    left:85%;
+}
+.twt{
+    position: absolute;
+    top: 12%;
+    left: 90%;
+}
+.navbar2 {
+      background-color: #F1D4E5;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+    }
+
+    .logo img {
+      height: 150px;
+      margin-top: 48px;
+      margin-right: 140px;
+    }
+
+    .menu-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+
+    }
+
+    .menu-items ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-left: -200px;
+
+    }
+
+    .menu-items ul li {
+      margin: 0 10px;
+
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      color: #A459D1;
+    }
+
+    .search-bar input[type="text"] {
+      height: 30px;
+      padding: 15px;
+      color: #A459D1;
+    }
+
+    .search-bar .search-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url('search-icon.png'); /* Replace with your search icon image */
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      border:#A459D1;
+    }
+    .searching{
+        margin-top: 2px;
+        
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+    ul li ul.dropdown{
+        width: 15%;
+        background: #F9F5F6;
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+    ul li a:hover{
+        background:#E893CF;
+    }
+    ul li:hover ul.dropdown{
+        display: block;
+    }
+
+.hero-content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #B336D6;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 30px;
+}
+.second{
+    width: 100%;
+    margin-top: 650px;
+    height: 200%;
+}
+
+#abt{
+    position: relative;
+    margin-top: -780px;
+    color: #CB6CE6;
+    margin-left: 680px;
+
+}
+.secpara{
+    position: relative;
+  padding: 8px;
+  width: 500px;
+  height: 500px;
+  text-align: justify;
+  font-size: 20px;
+  left: 160px;
+  top: -550px;
+  color: #fff;
+
+}
+.textbg{
+    margin-top: 10px;
+    height: 650px;
+    width: 1000px;
+    margin-left: -90px;
+}
+.box3bg{
+    width: 100%;
+    position: relative;
+    height: 60%;
+    margin-top: -440px;
+}
+.menuprice{
+    position: absolute;
+  top: 220%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #CB6CE6;
+  font-size: 20px;
+}
+.box1{
+  position: absolute;
+  top: 650%;
+  left: -100%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 5px 10px 20px 10px #E18DC0;
+   border: 2px solid white;
+   border-radius: 10px;
+  background-color:#E893CF;
+  padding:180px;
+
+}
+
+.box2{
+  position: absolute;
+  top: 650%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 5px 10px 20px 10px #E18DC0;
+   border: 2px solid white;
+  background-color:#E893CF;
+  padding: 180px;
+  
+
+}
+.box3{
+  position: absolute;
+  top: 650%;
+  left: 200%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 5px 10px 20px 10px #E18DC0;
+   border: 2px solid white;
+  background-color:#E893CF;
+  padding: 180px;
+  
+
+}
+.box11{
+    position: relative;
+    left: 140px;
+    top: -630px;
+    color: #fff;
+    font-size: 27px;
+}
+.box111{
+    position: relative;
+  padding: 5px;
+  width: 350px;
+  height: 600px;
+  text-align: justify;
+  font-size: 20px;
+  left: 85px;
+  top: -620px;
+  color: #fff;
+  
+}
+.box22{
+    position: relative;
+    left: 660px;
+    top: -1275px;
+    color: #fff;
+    font-size: 27px;
+    
+}
+.box222{
+    position: relative;
+  padding: 5px;
+  width: 350px;
+  height: 600px;
+  text-align: justify;
+  font-size: 20px;
+  left: 583px;
+  top: -1260px;
+  color: #fff;
+  
+}
+.box33{
+    position: relative;
+    left: 1160px;
+    top: -1915px;
+    color: #fff;
+    font-size: 27px;
+
+}
+.box333{
+  position: relative;
+  padding: 5px;
+  width: 350px;
+  height: 600px;
+  text-align: justify;
+  font-size: 20px;
+  left: 1090px;
+  top: -1910px;
+  color: #fff;
+}
+
+     
+
+    .sec3 {
+       margin-left: -220px;
+       width: 140%;
+       position: relative;
+    height: 700px;
+    top: -2100px;
+
+    }
+
+    .textbox {
+      position: absolute;
+      top: 2600px;
+      color: #000;
+      left: 50%;
+      width: 40%;
+      padding: 100px;
+      height: 67%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(232, 201, 212,0.6);
+      border-radius: 5px;
+      text-align: center;
+    }  
+    .head3{
+        position: relative;
+        text-align: center;
+        top: -50px;
+        color: #fff;
+    } 
+    .text3{
+        position: relative;
+        text-align: center;
+        top: -20px;
+        width: 100%;
+        color: #fff;
+        font-size: 18px;
+        text-align: justify;
+        word-spacing: 2px;
+        line-height:  27px;
+
+    }
+    .button1{
+        
+        padding: 13px;
+        background-color: #E893CF;
+        color: #fff;
+        border-top-color: #fff;
+        border-color: #fff;
+        border-radius: 20px;
+        border-bottom-color: #fff;
+        margin-top: -20px;
+
+    }
+    
+ .prefinal{
+     width: 100%;
+     position: relative;
+    height: 100%;
+    top: -2150px;
+
+ }   
+.map{
+    position: absolute;
+    top: 460%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0.5px 1px 10px 10px #E18DC0;
+     
+}
+.cakeorder{
+    position: absolute;
+    top: 407%;
+    left: 35%;
+    text-align: center;
+    color: #CB6CE6;
+    
+}
+
+.custom-card {
+      width: 570px; /* Adjust the width as desired */
+      border-radius: 20px; /* Adjust the border radius as desired */
+      position: absolute;
+      top: -2800px; /* Adjust the top position as desired */
+      left: 170%; /* Adjust the left position as desired */
+      transform: translateX(-50%);
+      height: 515px;
+      box-shadow: 0.5px 1px 10px 10px #E18DC0;
+      background-color: #E893CF;
+
+
+    }
+    .custom-submit-btn {
+      background-color: #C466DF;
+      border-color: #954BAB;
+      width: 200px;
+      position: absolute;
+      left: 32%; 
+      bottom:62px;/* Change the background color value as desired */
+    }
+    
+    .last{
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin-top: -3830px;
+    }
+    .lastlogo{
+        position: relative;
+        margin-top: -4000px;
+        margin-left: -60px;
+        
+        height: 280px;
+    }
+    .logo4{
+        position: relative;
+        margin-top: -1985px;
+        margin-left: 100px;
+        letter-spacing: 20px;
+
+    }
+    .list11 {
+          position: relative;
+      margin-top: -160px;
+      left: 28%;
+      padding: 10px;
+      word-spacing: 2px;
+      line-height: 30px;
+      color: #B23AD4;
+   }
+  .list22{
+      position: relative;
+      margin-top: -195px;
+      left: 44%;
+      padding: 10px;
+      word-spacing: 2px;
+      line-height: 30px;
+      color: #B23AD4;
+  }
+  .list33{
+      position: relative;
+      margin-top: -225px;
+      left: 61%;
+      padding: 10px;
+      word-spacing: 2px;
+      line-height: 30px;
+      color: #B23AD4;
+  }
+  .lastt{
+    position: relative;
+    margin-top: -130px;
+    margin-left: 1100px;
+  }
+.custom-button{
+    position: relative;
+    background-color:#C466DF;
+    width: 250px;
+    margin-left: 1px;
+    margin-top: 20px;
+    border-color:  #954BAB;
+}
+.custom-input {
+      width: 250px; 
+      height: 45px; /* Adjust the width value as desired */
+    }
+    .subs{
+        position: relative;
+        color: #B23AD4;
+        margin-top: -160px;
+        margin-left: 1180px;
+    }
+    .hr{
+        color: #000;
+        position: relative;
+        margin-top: 250px;
+        border:40px;
+        background-color:#C466DF ;
+        height: 1.5px;
+        width: 1200px;
+        margin-left: 160px;
+    }
+    .foot{
+        position: relative;
+        margin-top: 5px;
+        margin-left: 650px;
+        color:#85279F; 
+    }
+ 
+</style>
+<body>
+  <div class="navbar">
+      <img class="call" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAArRJREFUSEvtlt9LFFEUx79nZ1fLJPsBizuyQQ/2E4JyRqQipNKH8DErwoeezNZdS5KgiCAiEKQSdxSqt3opo5f+gH5ghLi7iEiQFAjJTosP9gMxf+zMiam2dnZndyd3woe6j+ee8/3ce889517CCg1aIS7+g3+dfCSkXgLQCSZFVnxXnU5J1lE/OzW5qry89B6A5hSMQFckxXfNSbgJPNaVWLM4rz8FUJsFIbTJYfG2U3ATOBKM7wPoZQ5xJtBxSfE9cgJuAo+0qweI8CKPcBKgBlnxPS8WbgLHzkzt0gVhrIDoVwL2SIr4phi4CTx6bnJdMln6saAg0QU57Osp6JfHIetWR4LqewD+PDGjGpXW14U3fnEUHA3FHzLTsRyiUbd7oWF37+ZPxUCN2KwdjwTVFgLuW5RTpExzH9w54J0tFmoJjrbOVHDJ/DSAknSA5tK21PX53zoBtQQbxkhQNRpFazqEGOelfvHmXwUPhz7sEJjHAbh+g/gz655ttQPehBV8rC3hXRT0ky4BQzV9YqzQAnM+i9Gg2svA2QyB8SWPVr/3ln8m3f6qc2qDZ0kwOt52ABqYW+T+qgf54DnBrwPT5XMubQJg0STAmHCx1lQz4H9n2H/2d6OTSRmg07Ii3skFz/sRiHWoNbqOIQCrMwR0MO4mPdTtTrJxHxqtAAS+KClV3dZzBZIRa0806aQ/sSq9Qnn8Mf/9PQ9l+tr6+kTa4ydAZNS22x7M7MXMN2r7q7pMVWJXKBqKNzJjEKAKuzFpfrOS4ltLIE7ZbO045TwSmK4kV7Iv/XdicxGXZUW8vqwdpwdFA/H9ugs9BKqzAX4sK+LRZeU4l/hwx1S1W3Mf1kk/QqBDmbefwcPraa6+Oly94Cg4XWywmYVNlYmtAsObspfpQjTXo/JHObZxrLZd/j3wN0ew0R+KcdpeAAAAAElFTkSuQmCC"/>
+      <img class="mail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAjJJREFUSEvtlj1oU1Ecxc//vaQ4dFAJNGniIE66tEJegg6C4OZWdVAsOrVafYgiglOfi4NgRd+rlE5CBcGvTRcHB0EkiR/dXMRB+xLBD8RuSe6Rl6bpM99pU9uid7uP/z2/e869988TrNGQNeLiP/ivJb8+ok6b2QSpbgq0EIhzxmTk6UoiSJ1x9wnkBDQGAd4w7OjbRb2K49dj7k6l4Q2ATUswuRYPhS+LJaqTDdw/Qn17X+4qwEuVdcQvJdpA0gl/9L5VwOmz7nkAE9UAAi8KheLRvVPb5tqBvzz1KRoMBB4A3FNTLzQNO+pUgecsQMYbiP8QkeG4HXnSDJ4xswdJzgDYUr+OVwwnanUCLumQuKXlIxfj05L3C2dGGGRP7jpAs3kqywSXdzoL0Q/F7b4P3jxjftkBFh8RGGh9FCsAl8XnCZzWKDqF3pn1toaWMlte1O2JN6vaEGDBDIjj/qfXwjkhuAtiuLauruPsOMDSVfcPJWpQoG8W8jGArS2g3ykyhGLxp2hapUstrekQnLRjswuNQffgiQbwVL5QHPIaTWrs82AH4PoNhErtTtyOvfNgzy0Ger/mJmrfq9jzofCF/ZYUvLqugxedps3sYZB3SnORk4YdeehPYdXAHuSVmd0VIFXc6X9fHf2qgptdsg0CNt1REFPVTvyXq93O1dgxRg2nf7rc8xfkMiNuiD24B+CAH9AlMAE8U1THkpOxb3+A23XTrbr18bPXLTft6Px7jn8DdKktLome/qoAAAAASUVORK5CYII="/>
+      <span id="calle">(+91)76276 88922</span>
+      <span id="maile">cakezone@gmail.com</span>
+      <img class="face" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA2xJREFUSEvFlltIFGEUx/9nZiwxu4m17RilVKAYQTVrIUXQQ/XYheqhhCKIWmcrooh6yacKK7DcKQgiCIqwC0RFvUQQUbq7RhAWvVgmzngpNLoq65zYzbWd3RlnXIK+t+U7///vnP3ON98h/KdF/4mLcYGbNrNY5tOXM1EpmPyJpAWwzuCO9z1y85abNOy1EE/g5n2dC0RTOgrwBgDTHMz7mXCb4uLJwEVfu1sCY4Jju/UCnkCnAA4CEN3MRvbjDJyZVNx/vLKucshJ4wh+WavPHSY8AFDpEWgNI0RFjq9fEp6j2+ltwa1BvcIU8AxAUU7QURHpInP1Ek3uyPTJAkeCvbNIiDcDmOsB2gPgKUDvAfMnQBKATQDKU1oC3mAov1q5VPQl3S8LHFWNGwBvdYfSDUn6tXdxQ9lAemxM7Qox6LxFT6wFGktUR3BM1csZeOsGTVTR3uNfZHd9Iqq+n4CGDI8hkvJKlYYZRto/8TckGtKvglHjBmbCpqpG+U563IsDRqkURymAjQCHsj2oPhD2H8kCt9W1TfjxaXofgCluYIhcHjhX8i4VF1X1WyNnO5a0PRCW52WBW9Xu1SbMx65QAIMFeVNW1M/4mogdSXjQiy494dHmioSMHcR8xYtBgSlNrrww81sSHOwt/CHEk0m4Lub1Aa3kbiJuFBwNGYfBXO8qBpArmIEDVWH5nAUcUY1DBD5tBybGB0WTy7wkFVX1JgCbbX2IDimN/rPWimv1GhCu/gPwawALbX2AbUpYvm4Bt4a6l5tsvnCoytKRTpX/eTaN7wAm2sUIApSl5+VWC/hJHUuFn4x+AIU2ogGAk2eTWAXFAydSL8+frp52LLlBNBmMgw6JDShhfxGB2AJO/PB4H3NqLmJcUzR5eyopy7e6RdUVAYi6NVEuXc1MC6s0f5stOFl1SH8Ixrqx4OMGM24FNNnS6U7P4hsA053g4wR3S9JgReYrZjsIRELGKmJ+BCDfDu4ZzPhqElYvC8uxTB/H0ScW7FrBAu4DNDVT5BHcx6a5purC7FcOd9r5NJ/v6SzJE8UmEKrTo1zBTPdMDO9cps3+7OTuOt4ymKK1xkoi7AKwFoDPAdxJwCOwcFnRZrW43QxXcKZBi9pd1tHj+5iaPhJfq/m+Tp/TNJlzxW6Z57o/7opzBWXqfgMSBHYu8JtDpQAAAABJRU5ErkJggg=="/>
+      <img class="ig" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA6dJREFUSEvlll1sFFUUx//n7rYhoQYhoDuzWAOGgAmIsjvbgkWR6ItGwARNfJKAEmWnfLxQg5oQ0JCAENKdUSAQExOe6kv5eOGBooi2O+tX+Ij1I9jozlBaJISPNLB7j5klNdvdO7sZ+4AJ9/Hec/6/e86995xLuEeD7hEX/29wbuOQJu/cmUVEolaGBHGRIw2/JfdO8+plMjDi7LrLMRKFXQBeAjC5nlDF+lUAxynasDloE0qwk84vB9FhABNDAivNbwgWryfs2LHKhSpw74bBhyPFQj9Ak8YJHXW/IlnObrGnXynXqwI7ae8QiFePA/o7gCiAR0c1mHAwldHfCgT3bOVo07Dnn0/TfwT/aFj6U76vY7pnAcwt6TCuJ6dpD9JWkqO6YyLOrc83s6SBOlA/op0A/QJCM4NbifEKgBiAcvAPAJ4c1YoQPbQgow0pwd+tdxNSIhcM5o6Lg/ru17qoWG6TW/v3JG4c2Q1gDQG/MjACYF65DTPNTdnaeSU42+49S8ynlGAm07A1O2e6cyToVQFuYwBEOM0F7jI+jfc7prsHwCaVP7FoTdqxPiXYSedfANEJheMZw9LbnA352SiSBeD5CpsTURE1G6cMDdwanvwTgDmVGpLlohZ7+rfhwERvGBntc8d03wPwoSoiZmxJ2fqObNrdToT3K21Y8NOpzvg34cDgNsOKn3FM9ziAF9V3gI4YlrbcafdWgrmr0kYQnklk9NMBt9p7jiWfrKoygpYmO7Uex3T9CuSX0OpB6DYy+oogMBMtSWW0L9URm94SgHuqVAlvGxl9f9bMv0ugHeqIucOw4judtPsRCFuqNi95cfKT+NfhwECfYemtzqbBmbgt94L45THCzN3RBrGx8XZk+KYo/ExAvDrVYmEiE+tVv+N2d7FkfFXrOfWZl2YILq4EiRa/JDGot1gY+WLhvhl/5Ez3AANjSuO/IEYiaevfq8Hv/PmEjET85xAwuCM5Vf+4vPT5huUFJNBViHlGZ+ycEny3MxUvBYNLdbffP2cmDPglE5IXgbAMgFbLL4JCfIHV7CrB/mTWdP9SnVHNzdRd5GvJqfqUwCZRSpvpfcDgbXW1whkcMiz9zXKXqn7st8YHhr0LDMwKpx14L65J5sfqfgRK6V6Xf4QEdQMo9dbxDAavTlnxzyo1Aj97PasuTmiaOMEG8SoANX+Xio1JEI6yxJ6UrSufZ91/9d2bLh8PE3VjgS7M3xe7XMunLjgMMIzt/Qf+B+21Yy6/Xa4pAAAAAElFTkSuQmCC"/>
+      <img class="twt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAtRJREFUSEvtlk1IFGEYx//P7PjBslh+lM7qFgUhYeRhdyzsgzSKEDpEEh2EJEgsZ/rAoIMU0sEgCDN3Jbx1KfvCU0SXpAJTdz1Ix4Io2VkFMxbDtHXnicFVdm2d2XUhLw4Mc5j/8/89zzPvPO9LWKeL1omLDfB/63zGrQ40TW/Ss+d6BEY1E1wA5pjRKURwx9PrnDUqGboyWWw893cVTy5VlgAONGl2zsHDX4XS+Zp2WrAqf7B5vDRLtH0AsGOlloGgAH7CRHugI0/2OQ/EaxLAfkU7DeAFAf0zRdIZK7hf0V4BqDNLkIDPHLWdYFF3VXVL75JXrARVBj2IvRwW9GiDu8f1JZnxsKJ5BMBv1RUA3wCUAHRK9kqvk4JHWrTDRFjOCsA8wLciWXp3dafrdzwkoGqXmdFlCSZMCYwGt9f5ZtVWDzR+zXU4cmYAiCsMZ0F4yVE8FrKzxjz3t4QCSugmg29bgkF3Za90Y6Xun1UdaAldZOIec0MOAxQGsM0STGiTu50dpuARNdRIzHsZXEmgWkvTFATE1OjxSY9MwQE1eJyZEr5FCt6mEp316n2+so+m4IF2Fh1TIWMVb88UuBjPYY/XmU8gtvzGo6p2SGf0AyjMHE5PZa90NplP0pEZm0itAC4AcKw1ASY6Ej80Vv2dll741aACpnoA7gzAAdnrlFdLOmnFo5e03bqATwBsa61WgHDU7S15mxbYEI+owZPE1AfAni6cme9V+Uqvm8WZbotjzRNb50VdIUINGAdTTOC9vejnsYr2ij9rBg+pP/JEzLUy01UAedZg6rMXTZ+zgho+yxUPXhsvyI6KlcxwQedyEMoBGNMr3xrIYbDQJvskn7V2UZG4H6uhemLuYGBXigYRYjxbEG2t8aeLVGKTr2plojbK0ToiMk4WZSDsBGMzgKnY/Z2MIRPJfe7pLTA2i7SvjM9caRNjARvgtXYu7bh1a/Vf2DXsH3QaV5IAAAAASUVORK5CYII="/>
+
+      
+  </div>
+         <div class="navbar2">
+    <div class="logo">
+      <img src="logo1.png" alt="Logo">
+      
+    </div>
+    <div class="menu-items">
+      <ul>
+        <li><a style="color: #B336D6;" href="#">Home</a></li>
+        <li><a style="color: #B336D6;" href="#">About Us</a></li>
+        <li>
+            <a style="color:#B336D6;" href="#">Menu & Pricing</a>
+        </li>
+         <li>
+            <a style="color: #B336D6;" href="#">Flavours</a>
+            <ul class="dropdown">
+               <li><a href="#">Coffee</a></li>
+               <li><a href="#">Banana</a></li>
+               <li><a href="#">Choco truffle</a></li>
+               <li><a href="#">Red velvet</a></li>
+               <li><a href="#">Lemon</a></li>
+               <li><a href="#">Vanilla</a></li>
+               <li><a href="#">Blueberry Cheese</a></li>
+            </ul>
+        </li>
+
+        
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <img class="searching" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA6lJREFUSEvFlk9sVFUUxr/z5k2npAkCCUZQFsZQwdp5nYIhVsU/G0Piwk3beTOv2FoCRuNCWBC7c1VIxIULDZFQoDNzpx2NURNcGNPEFFCB8mZaNYEgagVBE8NfgeG9e8htO5NXKDNXLPZs7/d9v3vPve/eR5ijojnioip46Lkh8/cHFj1JoBUgLGTguMne93a2+cx/mfQdwXtb3QdDJvUA5AA8/zYI41sAO5ys9fHdTGBGcCpeSIB4F4B5VUMJX16vjbR3715xqao2ILgNnE7ku5mhoKokgwWAz6WEGzKvnWU/0kxkPAVgE4BlSkTAkbB3ZW1bruWqLnwauL99zCLDHwFgAPgTUr7kDMQOzxTW13mqNnz94m4AthpnxocdWev1uwKnEvn9YKxTZgP8TEI0DVcKUgfv9JJFSrMGgEdEjyYz0Z914OUV7+vI3294ODdl+sgR1kadABF3Yz6R6pKqHkdYvTq+MjidyMeZofYTBqglIaKHdAKUJmXnxwA0ABhyhPWCjq8M7rfdzQTaoUxXLt+o2/TF6n90ApSmP57fRYRugP5wRHSpji+w4sJWZt6mTDWeGWnLNRR1AibB7jYi2grggiOsBTq+ILiTmfsmPg+S9clM7IROwGSrCwMAtwE45AirRcdXBmfs0aiEzE+Z3nCE9YFOwM6NR8J1l8LqUC4EaKcjoq/p+KZ9xyk7Pw7gIQDjNyLz67v2PHytWkjKdrcA9O6/PZS3gN03AXp/ot3gvqRoerUSOJ0orJLMBwiIAMg5wlLt1qpp4MHWH2qKYX8YzE9MuBmfyTDeWt9vnQqm7V93IvL3fVc3gHg7gDp1eYRYLrezsV+0qJPX7PQabB1ZXDRDXwNoDIyMgVBg8DliWg1ATax2alzdz2EQPpG+8c76gcafdOAzvk6DrQfnFcN174GxAYBZIWiMSHYwh7YA7EzpBJH/djLT/GulCVT8ERDx0WU+SYeBFwlUr95l9SNA4K+IjMFkJnpUhe9rH11pGPLHAOiMKY218YHGk3eCV/0D0Wmb0qRt91MGvVzSE3C86JnPduUazs6UMWvgve1uvWHQMAGLA6Bx3ws9/Uru8d9uhc8aWAWrrfFIDhHwSAnEwEmTjeftbKO6I8o1q+AS3Cf+DuAlAc7pGs+PteWa/wpshe4u6uvSiWPLJRvqYim1vdcRVs89XXEpPJUceQwy9A3AvY5omnhu/xewgvR1HlvQtSd2/p6eav2NmFTO+uHSncCcgW8CJzs8LmVoC4kAAAAASUVORK5CYII="/>
+      <span class="search-icon"></span>
+    </div>
+  </div>
+  <div class="hero-section">
+  <div class="hero-content">
+    <h1>Cake Zone</h1>
+    <p>Discover the Best Cakes in Town</p>
+  </div>
+</div>
+<div class="section1">
+    <img class="second" src="222.png">
+    <h1 id="abt">ABOUT US</h1>
+    
+      <div>
+          <img class="textbg" src="textbg.png">
+          <div class="secpara">Welcome to CakeZone, where we believe that life is better. with a slice of cake. We are passionate about creating delectable cakes that bring joy and delight to every occasion.Whether you're celebrating a birthday, wedding, anniversary, or any special milestone, our cakes are designed to make your moments truly memorable.Our team of skilled bakers and decorators bring their expertise and creativity to every cake we make. From elegant and classic designs to trendy and customized creations, we offer a wide range of options to suit your preferences.Thank you for choosing CakeZone. We look forward to serving you and being a part of your sweetest moments.</div>
+          <img class="box3bg" src="2.png">
+          
+         
+    
+
+
+  </div>
+</div>
+</div>
+      <div class="menuprice">
+      <h1> MENU & PRICING</h1> 
+      
+      <div class="box1"><h1 class="box1text"></h1></div>
+      <div class="box2"><h1 class="box2text"></h1></div>
+      <div class="box3"><h1 class="box3text"></h1></div>
+  </div>
+
+<h2 class="box11">BIRTHDAY CAKE</h2>
+<div class="box111">Indulge in our scrumptious selection of birthday cakes, designed to add sweetness to your special day. From classic flavors to unique creations, our cakes are baked with care and love. Prices vary based on size, flavor, and customization options.</div>
+<h2 class="box22">WEDDING CAKE</h2>
+<div class="box222">Celebrate your big day with our exquisite wedding cakes, handcrafted with elegance and sophistication. Choose from a range of flavors and designs to suit your style. Prices depend on size, intricacy, and personalized elements.</div>
+<h2 class="box33">CUSTOM CAKE</h2>
+<div class="box333">Our custom cakes are a delicious blend of artistry and taste. Let us bring your dream cake to life with personalized designs and flavors. Prices are determined based on size, design intricacy, and customization options. Contact us for a quote and consultation.</div>
+
+<div class="container">
+    <img class="sec3" src="sec3.png" alt="Your Image">
+    <div class="textbox">
+      <h2 class="head3">More Than Just Cakes!</h2>
+      <p class="text3">When life gives you a happy occasion, celebrate it with CakeZone! As you bite into our delightful treats you will experience a burst of natural flavor and freshness of ingredients that literally melts in your mouth. We offer an extensive variety of mouth-watering cakes and confections that will undoubtedly make you surrender your senses. Our aim is to deliver you consistent quality and spread happiness by serving smiles in every bite with CakeZone.</p>
+      <button class="button1"><b>Shop Now</b></button>
+    </div>
+  </div>
+      
+    <div  class="ani" style="background:#E893CF;margin-top:-2250px ;margin-left: 660px; height:90px;width:200px;position:absolute;text-align: center;color: #fff;"><p style="position: relative;color: #fff;margin-top:20px;">Cake dreams come true, choose your favorite:)</p></div>
+
+    <div>
+        <img class="prefinal" src="2.png">
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.4945846888772!2d77.13944377496198!3d11.076468889091121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8ff7a08d662bb%3A0x81c68f2ddd8c1dfa!2sKPR%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1688815767337!5m2!1sen!2sin" width="600" height="500" style="border:20px;border-radius: 23px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <h1 class="cakeorder"> FIND US & ORDER YOUR CAKE</h1>
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card custom-card">
+          <div class="card-body">
+            <h4 class="card-title text-center" style="color:#fff;">Get Connected With Us!</h4>
+            <form>
+              <div class="form-group" style="color:#fff;">
+                <label for="name">Name</label>
+                <input style="color: #C466DF;" type="text" class="form-control"  id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group"style="color:#fff;">
+                <label for="email" >Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group"style="color:#fff;">
+                <label for="message">Message</label>
+                <textarea  class="form-control" id="message" rows="3" placeholder="Enter your message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block custom-submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <div>
+      <img class="last" src="last.png">
+      <img class="lastlogo" src="logo1.png">
+     
+
+
+  </div>
+
+<div class="logo4"> <img class="lastfb"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAABPFJREFUaEPtmG9oG3UYx7/PpWlB6ovR6ZpLS13pVIpOZnPpqLg61Pn3zZgOQXwx0LI2l+6NG76YWBQR53Czucz5BxH3QnAwQUQ3nIw6nW2Sjq5aZbZQapu7uTk3ROtmknvkhNYmudz9csnAwfL29zzf53PfPL/f77kjXIU/ugqZcQ164V87GdFbWJICZJrGnXF5ptr/ZsVOJ/rSzRJJjzLxBoBuA7itGJKmAP4ehMOZTO7Trv3N6UoexDN0Qk1vkUDPMtDuAeA7MF5T4vIBD7nl93Qqmt4Apl0M3OGlYEHOGMCqogW/KUdL2OljA1xTf954D4ynyikgFEt4PdQQ2E4DZIrEC0GfjBo3ZNn8hEBrRUQ9xhyty2U2r36z5YJbvit0ou9sI0nZYQAtbmIVrzNO56S68NpYw+9OWo7Qk9HJuouoT4B5dcVAogKMY9NnA/dvPki5UimO0MmIfhCEx0TrFcTNg3GAffxBeDB4YmHt6x3nrpcyl/z+jLQRoHdttYnjSiyolg2djKSfANGHHoFnfIxup4tlJDJ3s0TS6VL6zOgOx+Wv7NZtnf7ocfa13mhMMeEmD9AXTEgdnVrjtFOuGzSAhKLJncLQqYjRy8T7PABbB39vSJP3u+UKQIMJm8Ix+VChlq3TSVX/GUCzW2Gb9T8VTa4XyRvun13lM30/ucSOKJpcdMwWQY/26x2miZRI4cIYBo6ENflBu9ykqm8C8AKA28vRzmRzTYWzShF0IqK/RISd5QgvxBLwTkiTewpzE5G5e4mko140QdiqxOS3luYWQSejximv5zIzBsNxeVsRtKq/QsBznqCBzxRNfsQZWtX/BuD3VoBiihboL8xNqsYgwFFvmphTNDlvf+U5Pd47s+yyz/+bR3EAVwSa/1geqF0/QNklbfgfYkrVb2Xgx/8ZNExIrUvP/TynE/3pLjJJdLY9A3DeBgGkEUULfG7THg8BZsFFQSEAeb1ayiyTza7OeNO3tk4PR412H/OEoNNjiiavEYwtCkuUsTklE+0d++TFDshzOtWjL+danBMEqQg6peqHGNgoUivjzzV07Wle3Gt50AymlGpYI6HrnA2gUugJwfdLVjRZcjzyUqo+Jvj+5xnaGshWrjAuA/AJOD2qaLLV/4u/4sslkt4Fou0CYp6hR/tm20zJNylQwwp5WdHkvBva5kZM3wemLwQFC8Kqf05LhHUdMfm4o9PWYlLVdQCBcsFLXuMR/Q0iFN2UAvoziiYXzfS2Gy6hGn0EjguIXlGnmWhLOBZ4v5DDFnpiYKJ2/tdlU+XP1FVtj+nQ8kCb3beQkkfbqKo/YAKHy3O7atDMROvDscCQXX3nt3FVt67povm49INUB5rAu0NasOQJ5gid6tGv41o6Zf8ltBi9KhuRaFyJBRy/E7refCe2zgb9NT7rVb7VvVUqc5qAH3JsruuMN513quUKbSUPb/tlhS+bGwLhFmfwCqCJxmt8l7rX7F150c0cIWhLxPoyVDef2Q3gmdKziSfoHDPvzdaaz3ftaf7LDdhaF4ZeEEuqxj0EfpuBVYUFPPT0mCTh6Y5BeVQEdiGmbGgr8d+Bp/HMk8S8Mx9e2Okxk/FiZ1z+uBzYiqCXFkpGjIeZ+G4AdxHzsBIP7igESarGqwCHGTgONofC8aYvvcBWDbqS4l5zPbWH12LVyrsGXS0n3XT+ASHM+D31P14TAAAAAElFTkSuQmCC"/>
+      <img class="lastig" src="data:image/png;base64,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"/>
+      <img class="lasttwt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAABDNJREFUaEPtmGGIFGUYx//Pu7fLaR8quz1vZz2EPgQhdGIzpx2GZcEJFcpFBAodYlnnzhJCEZGRdFCUhXazW3KVJVGGRVFfEjKE04Tb2bM8KMQIOr2d0bBIzMrb23litztY1t2ded/Ng4N9vw3z//+f3zzzzPDOEObhonnIjCb0XN21Zqebna7TgTkdj1HT0UNMy1igneGduq4QPrLszfY/Ze/QnEBnE+4AE78OYEElIAP7RUv4WX1P1J09l9mW6wThyZCgL263tKOVnprQtul+HGmlLV2vdVyW7cSsPrvVWcgRfACgr34GXxQI9XnMrQCeAPEDAL41Utrqar6q0LbpPAjgUxCO0RX06sPaXyrgtum8VYKQX5MhxuoVaW0iOHQi9yqIni4aGDg6HS709uzu/Fum9pjp9HrAIRnPjHaCgHUELC0Q1rPn7VmZXnK6PKdWpw8CeKhM+INH3qaV1pKTQSHspHsYzPcE1ZfpirMdKx4TsElPaR8FmmnbdPYDeKRCnCfQ4KW2jpfv3knT9WB4J4vsBbf4LBRnVGUxEx7vtrS3A49HJuEMEmFHjWonZjpwqhbNaHKyS7D4XoW25CHeaFjxA7X8VcdjbODsbV4o5DcKXzP4gJha8Jk+vOhieYEx89xaD943KtAEnNRT2vJ63jqvPOdzABsCFWYcYcIZAGcE4DCBwdgbyHu16Dsjpa1Qgs5uddo4gvHZh0IRQN5GOGZY2p3S0Fkzl2aiccH4xQOGANwiX13NQcQHdSv+sAr0LgY9pVa2MRcRv6hb8RekoTNmbjOB9jVWXtXN641U/Etp6PGBiRuvtIRPg9GmWlrVR1OI6sPaBWnooiGbcPuZ+H3V4oq+ESOlrfHz1t2aZpPODmYM+oX8X+eJ8Zie1t7xy/PdT2cTzqNM2AXgBr+wBs9fjrSKxUG2wr7QtuneJUDCg3c/gO0NgtW2E6cNK24GyfeFzpjOCAF1X/ZBCvlo/olMi6Vdezt+DZLlD73NWUcCXwUJU9YQnjMs7aWgfl/oYpBtuvsA3hw0VEZHwI+X2mJdftvd8sxA0P+BO5UfBjJstbR/FEShe9VQ508yYYGhS+AD52+mlsJGZtzBgE5Au0yxSi0z1nSntRHZDCno2fDRxORNAqH3Zr6aZWsW9VMgvs+w4odVzNLQM/uSVwBEVQoCOM+C+7qH4scV/f6/ekv7kFBkFTP3EGFLQ/trwqFIXvQHfbXVuqirOm0ncyYgNoA5DnAMoOtVO1Lm+42YntfTseJ/kIZX1fE4vv3sonC+5RmA+wEsbqDKz8x4V+TxhuoPn2q1fWfaTubuLX0rMq0FcGuAC3AJ/CGT+MSwYpkAemmJL3R54omkGy143nIW1E4eohBYCPA5AibBIXcqnM/17O78XZpC0iAFLZl9zeRN6GvW2orgZqebna7TgXk5Hv8Cm3dUPWVUwzgAAAAASUVORK5CYII="/>
+      <img class="lastmail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAA2ZJREFUaEPtmF+ITGEYxp/3jLG1Sv60mDO7JBKtbNmZITZ/InFBscWFVdyI3T0bJZGUQv7cYM/s0l6gSChEiQuFaMvMWC1FicTuzCxtXGA1O8736siOmd2Zc2Z2z8zs1ny33/s972+e7znnO/MRRuCgEciMAnSudq3gdMFpAwcK8chrPHxKeCnANQSUgumlJPhiZbP8JttQbUq4RGPsAWMOiB9SLy65WuTu/n0HxMOnhDYQ48aAQsJBlyofyRa4TwmuJaYLACb+70HvSBIrXI3OT/F9B0D760PfAIxLBsfAFY9X3mw1uF8JesFUl0L3hdsrz08JHWgITmVBH42gCGgH2apd6uT3Q4UPKJ9nMGu3AZQbaUWK7WOrTpZ876tJcFrPMjE/SgPmJ4MVj9epb+eghq8+uI1AKoAxZgISYUmlKj9JCu2vDy8D+KGZSGwx8XVEaJurRe5Jd01ge6gYRXyBmTamuwag5W6vI2ZmgtOZQv9r+l6QqF6glrabQTxTOisklvSHfIZZbeK89dC6fi8Dez1e+UwqGH9daBcIJwCMzgxYr84OdB/H3SItumXe2Wn6G+jveLnz4/iIzX4VwKrMYWNBtDwe/VnCJHijq9n5NFAbrGKJrgNwDB44+07H2Ai4xcD6ocHmzmlrOBNUspvpLADnMB7W0hs4nc6JSOD9DNoOYLoFYB8I3MKgY0ZaTLTMozoexxIeX5wOtASs/lVsby3q+X0Z4HWDB6c7keJRNaN/RBeThHvGOkPMNAus8TTL9/Um/w6MkwDsGcBHwdjrbpJP62t8taHVOYX+C66EPcx8kwCnGTgDQSLa4FYdvr7avEDrzVt3d0ywR23XAKw0AH8QtWubFp0q+5oQyXw43QfAYPLXhfcR4TAAWxyYxoyD7ibHcQJx/x+VN6cTnGsILiJB+pfcFABdLHG1p9HZmmoHhgW0Dte+o2tSxCYOFGnS0YpzU74YZX3YQJs9kMMm05mAFqDT+bsVf7gM1l1rnW7omgshXhl+B8SdiLmC1ojKF6qO10m/PfgQS4HusH79NSsVUB6cfuvyOmbHv+MH3DC11YWmaURbAZH0RlUS4nJlc9k7K1zWNZ7XdswUklSTTI9ZEkLSzi9USzvj5wtXvVa5b6ZTcNrMIavmC05b5aSZzoh0+g/qkcA9HJW+OAAAAABJRU5ErkJggg=="/>
+  </div>
+      <div class="list11"> 
+       <h4 class="quick">QUICK LINKS</h4>
+
+  <ul class="list1">
+    <li>Home</li>
+    <li>About Us</li>
+    <li>Menu & Pricing</li>
+    <li>Flavours</li>
+  </ul>
+</div>
+<div class="list22"> 
+       <h4 class="help">NEED HELP</h4>
+
+  <ul class="list2">
+    <li>FAQ</li>
+    <li>Cancellation & Refund</li>
+    <li>Privacy Policy</li>
+    <li>Terms & Conditions</li>
+    <li>Sitemap</li>
+  </ul>
+</div>
+   
+   <div class="list33"> 
+       <h4 class="help">MORE INFO</h4>
+
+  <ul class="list2">
+    <li>Corporate Cakes</li>
+    <li>Coupons & Offers</li>
+    <li>Franchise</li>
+    <li>Download App</li>
+   
+  </ul>
+</div>
+<div class="lastt">
+   <div class="row justify-content-center mt-6">
+      <div class="col-md-7">
+        <form>
+          <div class="forms-group">
+            <input type="email" class="form-control custom-input" id="email" placeholder="Enter your email" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block custom-button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <h4 class="subs"><b>Subscribe Our Newsletter</b></h4>
+  <div class="hr"><hr></div>
+   <footer class="foot">
+    <p>&copy; CakeZone. All rights reserved.</p>
+  </footer>
+   
+</body>
+</html>
